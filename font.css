@@ -1,0 +1,29 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+  font-family: 'Noto Sans KR';
+   font-weight: 300;
+   letter-spacing: -0.01em;
+ }
+ #color_google{
+  font-size: 30px;
+  font-weight: 500;
+}
+div #color_google :nth-child(1){
+    color : #4285F4;
+  }
+  div #color_google :nth-child(2){
+    color : #EA4335;
+  }
+  div #color_google :nth-child(3){
+    color : #FBBC05;
+  }
+  div #color_google :nth-child(4){
+    color : #4285F4;
+  }
+  div #color_google :nth-child(5){
+    color : #5BB974;
+  }
+  div #color_google :nth-child(6){
+    color : #EA4335;
+  }
