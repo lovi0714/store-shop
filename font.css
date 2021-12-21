@@ -8,8 +8,10 @@ body{
  }
  #colorGoogle{
   font-size: 30px;
+  /**두께 조절*/
   font-weight: bold;
 }
+/**colorGoole 하위 요소들에 색깔 지정*/
   div #colorGoogle :nth-child(1){
     color : #4285F4;
   }
@@ -43,8 +45,7 @@ body{
 a{
   color:#174EA6
 }
-input{
-  height: 30px;
-  border-radius: 5px;
-  border: 1px solid #E0E0E0;
+#fixedEmail{
+  font-size: 0.9em;
+  margin-left: 15px;
 }

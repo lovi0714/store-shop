@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="font.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <style>
+        /**체크박스랑 글씨 높낮이 맞춤*/
         label[for="pwMark"] {
         position: relative;
         top: -9.5px; 
@@ -19,33 +20,32 @@
 <body>
     <div class = "page">
         <div class = "layOut">
-            
             <div class = "information">
                 <div id = "colorGoogle"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
                 <div id = "makeAccount">Google 계정 만들기</div>
-                    <form>
+                    <form method="post">
                         <p>
                             <input type = "text" name = "lastName" size = "15" placeholder="성">
                             <input type = "text" name = "firstName" size = "15" placeholder = "이름">
-                        <p>
-                            <input type = "email" name = "eMail" placeholder = "사용자 이름" value = "@gmail.com" size = "36" style="text-align: right;"> 
-                        </p>
+                        <div id = emailBox>
+                            <input id =inputEmail type = "email" name = "eMail" placeholder = "사용자 이름" size = "20">
+                            <span id = "fixedEmail">@gmail.com</span>
+                        </div>
                         <span class = "helpArticle">문자,숫자,마침표를 사용할 수 있습니다</span>
                         </p>
-                <a href = "#" style = "text-decoration: none">대신 현재 이메일 주소 사용</a>
-                <p>
-                    <input type = "password" name = "makePassword" size = "15" placeholder = "비밀번호">
-                    <input type = "password" name = "checkPassword" size = "15" placeholder = "확인">
-                </p> 
-                <span class = "helpArticle">문자,숫자,기호를 조합하여 8자 이상을 사용하세요</span><br><br>
-                   <p><input type="checkbox" id = "pwMark"><label for ="pwMark">비밀번호 표시</label></p>
-                <div id = "bottom">
-                    <a href = "#" id = "goLogPage" style = "text-decoration: none">대신 로그인하기</a>
-                    <input id ="button" type = "submit"  value = "다음" style="float: right;">
+                        <a href = "#" style = "text-decoration: none">대신 현재 이메일 주소 사용</a>
+                        <p>
+                            <input type = "password" name = "makePassword" size = "15" placeholder = "비밀번호">
+                            <input type = "password" name = "checkPassword" size = "15" placeholder = "확인"><br>
+                        <span class = "helpArticle">문자,숫자,기호를 조합하여 8자 이상을 사용하세요</span><br>
+                        </p> 
+                        <p><input type="checkbox" id = "pwMark"><label for ="pwMark">비밀번호 표시</label></p>
+                        <div id = "bottom">
+                            <a href = "#" id = "goLogPage" style = "text-decoration: none">대신 로그인하기</a>
+                            <input id ="button" type = "submit"  value = "다음" style="float: right;">
+                        </div>
+                    </form>
                 </div>
-                </form>
-            </div>
-
             <div class = "imageBox">
                 <img id = "signUpImage" src = "signUpImage.jpg" alt = "이미지없음">
                <div style = "text-align :center">하나의 계정으로 모든 Google 서비스를 이용할 수 있습니다.</div>
