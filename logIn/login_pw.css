@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 26rem;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  outline: rgb(218, 220, 224) solid 1px;
+}
+
+header {
+  text-align: center;
+}
+
+.google-logo {
+  width: 4.5rem;
+  padding-bottom: 0.625rem;
+}
+
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 0.625rem;
+  color: #202124;
+  text-align: center;
+}
+
+.id-selection {
+  width: 11rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: rgb(218, 220, 224) solid 1px;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3c4043;
+  line-height: 21px;
+}
+
+.button-image01 {
+  width: 1rem;
+  align-items: center;
+}
+
+.button-image02 {
+  width: 1rem;
+}
+main {
+  align-self: center;
+}
+
+.outer-box {
+  margin: 2rem;
+}
+
+.outer-box .password-input {
+  position: relative;
+  height: 3.125rem;
+}
+
+.outer-box .password-input input[type="password"] {
+  padding: 0 1rem;
+  width: 23rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.outer-box .password-input label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.8rem;
+  padding-bottom: 0.125rem;
+  color: rgb(118, 118, 118);
+  font-size: 1.05rem;
+  font-weight: 400;
+  background: #fff;
+  transform: scale(1) translate(0.25rem, -1.125rem);
+  transition: all 0.15s;
+  pointer-events: none;
+  line-height: 0.625rem;
+}
+
+.outer-box .password-input input[type="password"]:focus,
+.outer-box.existence .password-input input[type="password"] {
+  border: 0.125rem solid #1a73e8;
+  border-radius: 0.2rem;
+}
+
+.outer-box .password-input input[type="password"]:focus + label,
+.outer-box.existence .password-input label {
+  color: #1a73e8;
+  transform: scale(0.85) translate(-0.5rem, -3.125rem);
+  font-size: 0.875rem;
+}
+
+.id-finder {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+main a:link,
+main a:visited {
+  text-decoration-line: none;
+  color: #1a73e8;
+}
+
+.box {
+  display: flex;
+}
+
+.password-finder {
+  margin: 2.3rem 2rem 0 2rem;
+  font-size: 14px;
+  color: #1a73e8;
+}
+
+.submission {
+  margin: 2rem 2rem 0 10rem;
+}
+
+.button {
+  padding: 0.4rem 1.5rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.password-show {
+  margin: 1rem 0;
+}

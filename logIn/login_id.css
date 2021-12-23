@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 26rem;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  outline: rgb(218, 220, 224) solid 1px;
+}
+
+header {
+  text-align: center;
+}
+
+.google-logo {
+  width: 4.5rem;
+  padding-bottom: 0.625rem;
+}
+
+h1,
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #202124;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 0.625rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+main {
+  align-self: center;
+}
+
+.outer-box {
+  margin: 2rem;
+}
+
+.outer-box .id-input {
+  position: relative;
+  height: 3.125rem;
+}
+
+.outer-box .id-input input[type="text"] {
+  padding: 0 1rem;
+  width: 23rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.outer-box .id-input label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.8rem;
+  padding-bottom: 0.125rem;
+  color: rgb(118, 118, 118);
+  font-size: 1.05rem;
+  font-weight: 400;
+  background: #fff;
+  transform: scale(1) translate(0.25rem, -1.125rem);
+  transition: all 0.15s;
+  pointer-events: none;
+  line-height: 0.625rem;
+}
+
+.outer-box .id-input input[type="text"]:focus,
+.outer-box.existence .id-input input[type="text"] {
+  border: 0.125rem solid #1a73e8;
+  border-radius: 0.2rem;
+}
+
+.outer-box .id-input input[type="text"]:focus + label,
+.outer-box.existence .id-input label {
+  color: #1a73e8;
+  transform: scale(0.85) translate(-0.5rem, -3.125rem);
+  font-size: 0.875rem;
+}
+
+.id-finder {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+a:link,
+a:visited {
+  text-decoration-line: none;
+  color: #1a73e8;
+}
+
+.guest {
+  padding: 2.75rem 2rem 0 2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #5f6368;
+  font-size: 0.95rem;
+}
+
+.box {
+  display: flex;
+}
+
+.creator {
+  margin: 2.75rem 2rem 0 2rem;
+  font-size: 14px;
+  color: #1a73e8;
+}
+
+.submission {
+  margin: 2rem 2rem 0 11rem;
+}
+
+.button {
+  padding: 0.4rem 1.5rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
