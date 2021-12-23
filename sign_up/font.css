@@ -6,13 +6,11 @@ body{
    letter-spacing: -0.01em;
    font-size : 15px;
  }
- 
  #colorGoogle{
   font-size: 30px;
   /**두께 조절*/
   font-weight: bold;
 }
-
 /**colorGoole 하위 요소들에 색깔 지정*/
   div #colorGoogle :nth-child(1){
     color : #4285F4;
@@ -44,11 +42,9 @@ body{
     color: #5f6368;
     padding-bottom: 50px;
   }
-
 a{
-  color:#174EA6
+  color:#1a73e8
 }
-
 #fixedEmail{
   font-size: 0.9em;
   margin-left: 15px;
