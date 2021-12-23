@@ -1,0 +1,73 @@
+.layOut{
+  /** 모서리 둥글게 */
+  border-radius: 9px;
+  /** 윤곽선 */
+  border: 1px solid #E0E0E0;
+  /** 크기 지정*/
+  width: 747px;
+  height: 592px;
+  /** 창 크기에 따라 변화*/
+  position: relative;
+  /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 170px로 지정 */
+  margin: 170px auto;
+ /** 박스 나누기 FLEX 지정*/
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.information{
+  flex:0.6;
+  display:flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-left: 40px;
+}
+#colorGoogle{
+  flex:0.2;
+}
+#makeAccount{
+  flex: 0.2;
+}
+.imageBox{
+  flex: 0.4;
+  padding: 20px;
+}
+#signUpImage{
+  width: 300px;
+  height: 250px;
+  margin: auto;
+}
+#bottom{
+  flex: 0.2;
+  margin-top: 50px;
+  display: flex;
+}
+#goLogPage{
+  flex:0.5;
+}
+#button{
+  margin-left: auto;
+  background-color: rgb(30, 118, 234);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 80px;
+}
+#button:hover{
+  background-color: #3566B8;
+}
+/**input박스 테두리 둥글게, 높이, 색깔 설정*/
+input{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #DADCE0;
+}
+#emailBox{
+  border-radius: 5px;
+  border: 1px solid #DADCE0;
+  width: 280px;
+}
+#inputEmail{
+  border: none;
+}
